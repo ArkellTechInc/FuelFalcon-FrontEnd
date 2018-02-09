@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Digital fuel logging made easy.">
+    <meta name="author" content="Arkell Tech">
+    <title>Machine ID</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body onload="onLoad(3)">
+    <header>
+	<div class="log">
+		<div class="logMiddle">
+			<div class="logContainer">
+			<div class="dieselType floatLeft inLine logLabel bebasFont"></div><div class="floatLeft inLine logContent bebasFont">DIESEL</div>
+			<div class="fuelAmount floatLeft inLine logLabel bebasFont"></div><div class="floatLeft inLine logContent bebasFont">21.50L</div>
+			</div>
+		</div>
+	</div>
+	</header>
+	
+	<!-- these 3 divs are used to vertically and horizontally center the content -->
+	<div class="content">
+		<div class="contentMiddle">
+			<div class="contentContainer">
+				<TABLE>
+					<TR>
+						<TD class="backContainer"><a href="fuelAmount.html"><img src="images/backButton.png" alt='back button'></a></TD>
+						<TD class="formContainer">
+							<form id="machineIDForm" action="machineID">
+								<label class="machineID inLine inputLabel bebasFont">Machine ID</label>
+								<input id="machineID" type="number" class="inLine floatRight numberInput" placeholder="000" name="machineID" readonly required>
+							</form>
+							<div id="or" class="bebasFont">OR</div>
+							<select id = "machineList" class="bebasFont">
+								<option selected value> --- Select from list ---</option>
+								<option value = "1">102 - Greens</option>
+								<option value = "2">103 - Rough Mower</option>
+								<option value = "3">104 - and etc</option>
+							</select>
+
+						</TD>
+						<TD class="nextContainer"><a href="employeeID.html"><img src="images/nextButton.png" alt='next button'></a></TD>
+					</TR>
+				</TABLE>	
+			</div>
+		</div>
+	</div>
+    <footer>
+	<div class="keyboard">
+		<div class="keyboardMiddle">
+			<div class="keyboardContainer">
+			
+			<TABLE class="bebasFont kbSpacing">
+				<TR>
+					<TD class="kbNum" onclick="tapOne()"> 1 </TD>
+					<TD class="kbNum" onclick="tapTwo()"> 2 </TD>
+					<TD class="kbNum" onclick="tapThree()"> 3 </TD>
+					<TD class="kbNum" onclick="tapFour()"> 4 </TD>
+					<TD class="kbNum" onclick="tapFive()"> 5 </TD>
+					<TD class="kbBackspace" onclick="tapBack()"></TD>
+				</TR>
+
+				<TR>
+					<TD class="kbNum" onclick="tapSix()"> 6 </TD>
+					<TD class="kbNum" onclick="tapSeven()"> 7 </TD>
+					<TD class="kbNum" onclick="tapEight()"> 8 </TD>
+					<TD class="kbNum" onclick="tapNine()"> 9 </TD>
+					<TD class="kbNum" onclick="tapZero()"> 0 </TD>
+					<TD class="kbNum"> . </TD>
+				</TR>
+
+				<TR>
+					<TD class="kbClear" colspan="3" onclick="tapClear()"> CLEAR </TD>
+					<TD class="kbEnter" colspan="3" onclick="tapEnter()"> ENTER </TD>
+				</TR>
+			</TABLE>
+			
+			</div>
+		</div>
+	</div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="scripts/keyboard.js"></script>
+</html>

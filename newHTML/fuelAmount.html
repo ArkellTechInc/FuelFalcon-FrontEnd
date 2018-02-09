@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Digital fuel logging made easy.">
+    <meta name="author" content="Arkell Tech">
+    <title>Fuel Amount</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body onload="onLoad(2)">
+    <header>
+	<div class="log">
+		<div class="logMiddle">
+			<div class="logContainer">
+			<div class="dieselType floatLeft inLine logLabel bebasFont"></div><div class="floatLeft inLine logContent bebasFont">DIESEL</div>
+			</div>
+		</div>
+	</div>
+	</header>
+	
+	<!-- these 3 divs are used to vertically and horizontally center the content -->
+	<div class="content">
+		<div class="contentMiddle">
+			<div class="contentContainer">
+				<TABLE>
+					<TR>
+						<TD class="backContainer"><a href="fuelType.html"><img src="images/backButton.png" alt='back button'></a></TD>
+						<TD class="formContainer inLine">
+							<form id="fuelAmountForm" action="fuelAmount">
+								<label class="fuelAmount inLine inputLabel bebasFont">LITRES USED</label>
+								<input id="fuelAmount" type="text" class="inLine floatRight decimalInput" placeholder="0.00" name="fuelAmount" required readonly>
+							</form>
+
+						</TD>
+						<TD class="nextContainer"><a href="machineID.html"><img src="images/nextButton.png" alt='next button'></a></TD>
+					</TR>
+				</TABLE>	
+			</div>
+		</div>
+	</div>
+    <footer>
+	<div class="keyboard">
+		<div class="keyboardMiddle">
+			<div class="keyboardContainer">
+			
+			<TABLE class="bebasFont kbSpacing">
+				<TR>
+					<TD class="kbNum" onclick="tapOne()"> 1 </TD>
+					<TD class="kbNum" onclick="tapTwo()"> 2 </TD>
+					<TD class="kbNum" onclick="tapThree()"> 3 </TD>
+					<TD class="kbNum" onclick="tapFour()"> 4 </TD>
+					<TD class="kbNum" onclick="tapFive()"> 5 </TD>
+					<TD class="kbBackspace" onclick="tapBack()"></TD>
+				</TR>
+
+				<TR>
+					<TD class="kbNum" onclick="tapSix()"> 6 </TD>
+					<TD class="kbNum" onclick="tapSeven()"> 7 </TD>
+					<TD class="kbNum" onclick="tapEight()"> 8 </TD>
+					<TD class="kbNum" onclick="tapNine()"> 9 </TD>
+					<TD class="kbNum" onclick="tapZero()"> 0 </TD>
+					<TD class="kbNum" onclick="tapDec()"> . </TD>
+				</TR>
+
+				<TR>
+					<TD class="kbClear" colspan="3" onclick="tapClear()"> CLEAR </TD>
+					<TD class="kbEnter" colspan="3" onclick="tapEnter()"> ENTER </TD>
+				</TR>
+			</TABLE>
+			
+			</div>
+		</div>
+	</div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="scripts/keyboard.js"></script>
+</html>

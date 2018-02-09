@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital fuel logging made easy.">
+    <meta name="author" content="Arkell Tech">
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="scripts/validation.js"></script>
+  </head>
+  <body>
+    <header>
+    </header>
+	<!-- these 3 divs are used to vertically and horizontally center the content -->
+	<div class="outer">
+		<div class="middle">
+			<!-- width set to 50% -->
+			<div class="inner">
+				<div class="bebasFont" id="companyTitle">FUELFALCON</div>
+				<div id="companyDescription">Digital fuel logging made simple.</div>
+				<!-- check "username + password" with database -->
+				<form id="loginForm" action="fuelType.html">
+					<input type="text" class="inLine floatRight loginInput" placeholder="username" name="username" autofocus="autofocus" required>
+					<img class="inLine userIcon" src="images/userIcon.png" alt='user icon'>
+					<br />
+					<input type="password" class="inLine floatRight loginInput" placeholder="password" name="password" required>
+					<img class="inLine userIcon" src="images/passIcon.png" alt='pass icon'>
+					<br />
+					<button onclick="validateLogin()" type="submit"><img id="loginImg" src="images/login1.png" alt='submit button'></button><br />
+				</form>
+				<div class="bebasFont" id="loginExtra">FORGOT PASSWORD | CREATE ACCOUNT</div>
+			</div>
+		</div>
+	</div>
+    <footer>
+    </footer>
+  </body>
+</html>

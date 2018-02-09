@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Digital fuel logging made easy.">
+    <meta name="author" content="Arkell Tech">
+    <title>Submit</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+	<div class="log">
+		<div class="logMiddle">
+			<div class="logContainer">
+			</div>
+		</div>
+	</div>
+	</header>
+	
+	<!-- these 3 divs are used to vertically and horizontally center the content -->
+	<div class="content">
+		<div class="contentMiddle">
+			<div class="contentContainer">
+				<TABLE>
+					<TR>
+						<TD class="backContainer"><a href="employeeID.html"><img src="images/backButton.png" alt='back button'></a></TD>
+						<TD class="formContainer inLine">
+							<div class="dieselType floatLeft inLine submitLabel bebasFont">FUEL TYPE</div><div class="floatRight inLine submitContent bebasFont">DIESEL</div>
+							<div class="fuelAmount floatLeft inLine submitLabel bebasFont">FUEL AMOUNT</div><div class="floatRight inLine submitContent bebasFont">250.99L</div>
+							<div class="machineID floatLeft inLine submitLabel bebasFont">MACHINE ID</div><div class="floatRight inLine submitContent bebasFont">215 - Toro Model 04520...</div>
+							<div class="employeeID floatLeft inLine submitLabel bebasFont">EMPLOYEE ID</div><div class="floatRight inLine submitContent bebasFont">005 - CLAYTON CAMPBELL</div>
+
+						</TD>
+						<TD class="nextContainer"></TD>
+					</TR>
+				</TABLE>	
+			</div>
+		</div>
+	</div>
+    <footer>
+	<div class="keyboard">
+		<div class="keyboardMiddle">
+			<div class="keyboardContainer">
+						<div id="submitButton" onclick="submitForm()"></div>
+						<div id="submitStatus" class="bebasFont"></div>
+			</div>
+		</div>
+	</div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="scripts/validation.js"></script>
+</html>
